@@ -64,7 +64,9 @@ img {
 
 .btn:hover,
 .btn:focus {
-    color: var(--title-color);
+    background: #188ce8;
+    color: #fff;
+    /* color: var(--title-color); */
 }
 
 .btn {
@@ -75,9 +77,11 @@ img {
     line-height: 1.875;
     letter-spacing: 0.06em;
     color: #FFFFFF;
-    background-color: var(--accent-color);
-
     padding: 10px 32px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    
     min-width: 200px;
     height: 50px;
     background: #2196f3;
@@ -286,7 +290,6 @@ color: var(--accent-color);
     background-color: #f5f4fa;
     border-radius: 4px;
     background-position: center;
-    background-size: contain;
     background-repeat: no-repeat;
     background-size: 70px;
 }
@@ -335,11 +338,15 @@ color: var(--accent-color);
     justify-content: space-between;
 }
 
+.team {
+    background: #F5F4FA;
+}
+
 .team-section {
     padding-top: 94px;
     padding-bottom: 94px;
     text-align: center;
-    background: #F5F4FA;
+    /* background: #F5F4FA; */
 }
 
 .team-list {
@@ -387,6 +394,16 @@ color: var(--accent-color);
     --color2: #fff;
 }
 /*  ============ CUSTOMERS  ============ */
+.customers-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.167;
+    letter-spacing: 0.03em;
+  
+    color: var(--title-color);
+    margin-bottom: 50px;
+}
+  
 .customers {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -406,11 +423,14 @@ color: var(--accent-color);
     width: 170px;
     height: 90px;
     border: 1px solid #afb1b8;
+    border: 1px solid #AFB1B8;
+    box-sizing: border-box;
+    border-radius: 4px;
 }
   
 .customers-link:hover {
     border-color: var(--accent-color);
-  }
+}
   
 .customers-link:hover .customers-svg {
     --color1: var(--accent-color);
@@ -461,7 +481,7 @@ color: var(--accent-color);
 }
 
 .portfolio-subtitle {
-    font-style: normal;
+font-style: normal;
 font-weight: 400;
 font-size: 16px;
 line-height: 1.875;
@@ -552,14 +572,14 @@ color: var(--subtitle-color);
 }
 
 .footer {
-        background: #2f303a;
+    background: #2f303a;
 }
 
 .footer-section {
     display: flex;
     padding-top: 60px;
     padding-bottom: 60px;
-  }
+}
 
 .logo-color-footer {
     font-family: var(--secondary-font);
